@@ -1,0 +1,14 @@
+.vscode
+node_modules
+dist/*
+assets/js/app-*
+assets/js/theme-*
+assets/css/bundle-*
+assets/index.html
+assets/sw.js
+assets/precache-manifest.*.js
+dist/*
+logs/*.log
+npm-debug.log*
+*.zip
+docs/*
