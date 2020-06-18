@@ -8,13 +8,13 @@ class FooterMenu extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      isActive: false
+      isActive: false,
     }
   }
 
   isActiveToggle = () => {
     this.setState({
-      isActive: !this.state.isActive
+      isActive: !this.state.isActive,
     })
   }
 
@@ -89,7 +89,7 @@ const Contacts = ({ contacts }) => {
 export default class Footer extends React.PureComponent {
   static propTypes = {
     settings: PropTypes.shape({}).isRequired,
-    cookieBannerContent: PropTypes.func.isRequired
+    cookieBannerContent: PropTypes.func.isRequired,
   }
 
   componentDidMount() {
@@ -114,13 +114,13 @@ export default class Footer extends React.PureComponent {
 
   getCookieBannerContent = () => {
     this.props.cookieBannerContent({
-      setCookie: false
+      setCookie: false,
     })
   }
 
   setCookie = () => {
     this.props.cookieBannerContent({
-      setCookie: true
+      setCookie: true,
     })
   }
 
@@ -177,7 +177,7 @@ export default class Footer extends React.PureComponent {
                 : "cookie-banner-wrapper--hidden"
             }
             dangerouslySetInnerHTML={{
-              __html: cookieBanner
+              __html: cookieBanner,
             }}
           />
         </footer>

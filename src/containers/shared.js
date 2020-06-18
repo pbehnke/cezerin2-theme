@@ -8,7 +8,7 @@ const SharedContainer = props => {
   const {
     children,
     cookieBannerContent,
-    state: { currentPage, settings, cookiebanner }
+    state: { currentPage, settings, cookiebanner },
   } = props
   const hideFooter =
     (currentPage.path === "/checkout-success" ||
@@ -35,8 +35,8 @@ SharedContainer.propTypes = {
   state: PropTypes.shape({
     currentPage: PropTypes.shape({}),
     settings: PropTypes.shape({}),
-    cookiebanner: PropTypes.shape({})
-  }).isRequired
+    cookiebanner: PropTypes.shape({}),
+  }).isRequired,
 }
 
 export default SharedContainer

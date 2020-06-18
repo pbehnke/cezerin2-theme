@@ -1,9 +1,9 @@
-import jwt from "jsonwebtoken";
+import jwt from "jsonwebtoken"
 
 class AuthHeader {
   encodeUserPassword(token) {
-    return jwt.sign({ password: token }, cert);
+    return jwt.sign({ password: token }, cert)
   }
 }
 
-export default new AuthHeader();
+export default new AuthHeader()
