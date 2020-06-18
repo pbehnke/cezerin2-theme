@@ -1,6 +1,6 @@
 {
   "name": "cezerin2-theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Theme for cezerin2.",
   "main": "dist/index.js",
   "license": "Unlicense",
